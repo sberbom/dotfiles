@@ -2,7 +2,7 @@ local opt = vim.opt
 
 -- line numbers
 opt.number = true
-opt.relativenumber = true
+-- opt.relativenumber = true
 
 -- tabs and indentaiton
 opt.tabstop = 4
@@ -22,17 +22,17 @@ opt.cursorline = true
 
 -- apperance
 opt.termguicolors = true
-opt.background = 'dark'
-opt.signcolumn = 'yes'
+opt.background = "dark"
+opt.signcolumn = "yes"
 
 -- bakcspace
-opt.backspace = {'indent', 'eol', 'start'}
+opt.backspace = { "indent", "eol", "start" }
 
 -- clipboard
-opt.clipboard:append('unnamedplus')
+opt.clipboard:append("unnamedplus")
 
 -- split windows
 opt.splitright = true
 opt.splitbelow = true
 
-opt.iskeyword:append('-')
+opt.iskeyword:append("-")

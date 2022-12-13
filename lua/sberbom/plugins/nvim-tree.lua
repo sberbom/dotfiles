@@ -10,10 +10,10 @@ vim.g.loaded_netrwPlugin = 1
 nvimtree.setup({
 	view = {
 		adaptive_size = true,
-		highlight_git = true,
 	},
-	render = {
+	renderer = {
 		group_empty = true,
+		highlight_git = true,
 	},
 	actions = {
 		open_file = {

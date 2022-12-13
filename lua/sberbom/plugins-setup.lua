@@ -33,8 +33,6 @@ return packer.startup(function(use)
 
 	use("nvim-lua/plenary.nvim") -- help functions for lua plugins
 
-	use("bluz71/vim-nightfly-guicolors") -- colorscheme
-
 	use("christoomey/vim-tmux-navigator") -- navigate between tmux panes and vim splits
 
 	use("szw/vim-maximizer") -- maximize current window
@@ -91,6 +89,19 @@ return packer.startup(function(use)
 
 	-- git integration
 	use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
+
+	use("romgrk/barbar.nvim") -- tabline
+
+	use({
+		"gelguy/wilder.nvim",
+		config = function()
+			-- config goes here
+		end,
+	}) -- atuocompletion for command line
+
+	use({ "catppuccin/nvim", as = "catppuccin" }) -- colorscheme
+
+	use({ "tpope/vim-fugitive", as = "fugitive" }) -- git integration
 
 	if packer_bootstrap then
 		require("packer").sync()
